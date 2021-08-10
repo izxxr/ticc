@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "Whitney";
+    src: url("../assets/fonts/Whitney Medium.ttf");
+}
+
+
+:root {
+    --dark-bg-primary: #0a0d12;
+    --dark-bg-secondary: #1e242e;
+    --primary-color: #586edb;
+    --secondary-color: #6a6b6e;
+    --danger-color: #bf4143;
+    --success-color: #39e653;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark-bg-primary);
+    color: white;
+    font-family: "Whitney";
+    text-align: center;
+}
+
+h1 {
+    font-family: "Whitney";
+    font-size: 3vw;
+    text-align: center;
+    text-shadow: 0 1px 3px white;
+}
+
+p, label {
+    font-family: "Whitney";
+    text-align: center;
+}
+
+input, textarea {
+    background-color: var(--dark-bg-secondary);
+    color: white;
+    font-family: "Whitney";
+    font-size: 16px;
+    border-width: 1;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: var(--dark-bg-secondary);
+
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    width: 40vw;
+    height: 24px;
+    padding: 5px;
+}
+
+input:hover, textarea:hover {
+    border-color: black;
+}
+
+input:focus, textarea:focus {
+    border-color: deepskyblue;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: Whitney;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100px;
+    height: 40px;
+
+    border-radius: 5px;
+    border-width: 0;
+    border-style: solid;
+    border-color: var(--primary-color);
+    outline: none;
+
+    transition: all 167ms ease-in-out;
+
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #445ddb;
+}
+
+.btn-primary:active {
+    background-color: #2d4ce3;
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    color: white;
+    font-family: Whitney;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100px;
+    height: 40px;
+
+    border-radius: 5px;
+    border-width: 0;
+    border-style: solid;
+    border-color: var(--danger-color);
+    outline: none;
+
+    transition: all 167ms ease-in-out;
+
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: #c73436;
+}
+
+.btn-danger:active {
+    background-color: #bf1f21;
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    color: white;
+    font-family: Whitney;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100px;
+    height: 40px;
+
+    border-radius: 5px;
+    border-width: 0;
+    border-style: solid;
+    border-color: var(--danger-color);
+    outline: none;
+
+    transition: all 167ms ease-in-out;
+
+    cursor: pointer;
+}
+
+.btn-success:hover {
+    background-color: #12b82b;
+}
+
+.btn-success:active {
+    background-color: #139427;
+}
+
+.todo-table {
+    width: 90vw;
+    color: white;
+}

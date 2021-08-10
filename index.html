@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ticc - A go to todo list</title>
+</head>
+<body>
+    <h1>Ticc</h1>
+    <p style="font-weight: 600;">A simple go-to TODOs list that just works.</p>
+    <br><br>
+    <div align="center">
+        <p style="padding-right: 10px; font-size: 20px;">TODO Title</p>
+        <input id="todoTitle" type="text">
+        <p style="padding-right: 10px; font-size: 20px;">TODO Description</p>
+        <textarea id="todoDescription" style="height: 200px;"></textarea>
+        <br><br>
+        <button class="btn-primary" onclick="addToList()" style="margin-right: 10px;">Add to list</button>
+        <button class="btn-danger" onclick="localStorage.clear(); updateTable()">Clear list</button>
+    </div>
+    <div id="items" align="center">
+      <h2>Your TODOs</h2>
+      <table class="todo-table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">TODO Title</th>
+            <th scope="col">TODO Description</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="todos">
+        </tbody>
+      </table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
